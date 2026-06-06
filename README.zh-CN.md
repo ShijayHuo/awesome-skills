@@ -1,4 +1,8 @@
+[中文](./README.zh-CN.md) | [English](./README.md)
+
 # Skills
+
+[![license](https://img.shields.io/badge/license-MIT-007EC6)](./LICENSE)
 
 ## 这是什么
 
