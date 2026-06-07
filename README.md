@@ -45,14 +45,14 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 
 ### Essentials
 
-- `/grill-with-docs` - Align requirements, break down features, unify domain terms and concepts, and sync the results into `CONTEXT.md` and architecture decision records (ADRs). This skill is adapted from [Mattpocock: Grill with doc](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md).
-- `/tdd` - Test-driven development. This skill comes entirely from [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md).
-- `/review` - Code review to verify whether the implementation matches the feature requirements and whether the code follows standards such as naming, architecture layering, component conventions, and so on. This skill comes entirely from [Mattpocock: Review](https://github.com/mattpocock/skills/blob/main/skills/in-progress/review/SKILL.md).
-- `/fix-bug` - Bug fixing. Suitable for prompts such as "diagnose this" or "debug this", for reported defects, for cases where a feature is broken, throwing exceptions, or failing, and for performance regressions. This skill comes entirely from [Mattpocock: diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md).
+- [/grill-with-docs](./skills/grill-with-docs/SKILL.md) - Align requirements, break down features, unify domain terms and concepts, and sync the results into `CONTEXT.md` and architecture decision records (ADRs). This skill comes entirely from [Mattpocock: Grill with doc](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md).
+- [/tdd](./skills/tdd/SKILL.md) - Test-driven development. This skill comes entirely from [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md).
+- [/review](./skills/review/SKILL.md) - Code review to verify whether the implementation matches the feature requirements and whether the code follows standards such as naming, architecture layering, component conventions, and so on. This skill comes entirely from [Mattpocock: Review](https://github.com/mattpocock/skills/blob/main/skills/in-progress/review/SKILL.md).
+- [/diagnose](./skills/diagnose/SKILL.md) - Bug fixing. Suitable for prompts such as "diagnose this" or "debug this", for reported defects, for cases where a feature is broken, throwing exceptions, or failing, and for performance regressions. This skill comes entirely from [Mattpocock: diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md).
 - `/commit-and-push` - Commit and push a remote branch, create a draft pull request, and check or bind the related documentation and issues.
 - [/clean-code](./skills/clean-code/SKILL.md) - Clean up code based on the principles of *Clean Code*. This skill comes entirely from this repository's local skill document, currently imported from [antigravity-awesome-skills @ 9d486d0](https://github.com/sickn33/antigravity-awesome-skills/blob/9d486d0899e0c4474939861469ac43339f128344/skills/clean-code/SKILL.md).
 
 ### Commonly Used, Personal Preference
 
-- `/to-issues` - Break task plans, specs, or PRDs into independently actionable GitHub issues for lightweight task management. This skill is adapted from [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md).
+- [/to-issues](./skills/to-issues/SKILL.md) - Break task plans, specs, or PRDs into independently actionable GitHub issues for lightweight task management. This skill comes entirely from [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md).
 - `/ddd` - Four-layer architecture practice for domain-driven design.
