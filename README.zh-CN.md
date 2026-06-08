@@ -47,4 +47,5 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 
 ### 常用，个人偏好
 - [/to-issues](./skills/to-issues/SKILL.md) —— 将任务计划、规范或 PRD 分解为可独立获取的 GitHub 问题，适用于做轻量任务管理。该 skill 完全来源于 [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md)
+- [/handoff](./skills/handoff/SKILL.md) —— 将当前对话压缩成一个可交接文档，方便下一位 agent 直接接手。该 skill 完全来源于 [Mattpocock: Handoff](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md)。
 - `/ddd` —— 领域驱动设计四层架构实践
