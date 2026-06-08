@@ -55,4 +55,5 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 ### Commonly Used, Personal Preference
 
 - [/to-issues](./skills/to-issues/SKILL.md) - Break task plans, specs, or PRDs into independently actionable GitHub issues for lightweight task management. This skill comes entirely from [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md).
+- [/handoff](./skills/handoff/SKILL.md) - Compact the current conversation into a handoff document so another agent can continue from the right context. This skill comes entirely from [Mattpocock: Handoff](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md).
 - `/ddd` - Four-layer architecture practice for domain-driven design.
