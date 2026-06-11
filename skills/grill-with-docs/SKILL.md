@@ -1,9 +1,11 @@
 ---
 name: grill-with-docs
-description: Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.
+description: Exhaustive grilling session that walks the design tree branch by branch, challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when the user wants a deep, open-ended interrogation rather than a finite review.
 ---
 
 <what-to-do>
+
+If the user mainly needs a finite, highest-signal review of the most important decisions, prefer [../key-decision-vetting/SKILL.md](../key-decision-vetting/SKILL.md) instead. Use this skill when the goal is to keep drilling until the broader design tree is resolved.
 
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer.
 
