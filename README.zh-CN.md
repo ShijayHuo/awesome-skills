@@ -43,7 +43,7 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 - [/tdd](./skills/tdd/SKILL.md) —— 测试驱动开发。该 skill 完全来源于 [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md)。
 - [/review](./skills/review/SKILL.md) —— 代码审查，验证实现是否与功能对齐、代码是否符合规范，如命名、架构分层、组件规范等等。该 skill 完全来源于 [Mattpocock: Review](https://github.com/mattpocock/skills/blob/main/skills/in-progress/review/SKILL.md)
 - [/diagnose](./skills/diagnose/SKILL.md) —— 修复漏洞，适用于提出“诊断此问题”/“调试此问题”、报告缺陷、指出某些功能出现故障/抛出异常/失败，或描述性能退化的情况。该 skill 完全来源于 [Mattpocock: diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md)。
-- [/clean-code](./skills/clean-code/SKILL.md) —— 基于《代码整洁之道》原则整理代码。该 skill 当前以本仓库内的本地文档为准，完全来源于 [antigravity-awesome-skills @ 9d486d0](https://github.com/sickn33/antigravity-awesome-skills/blob/9d486d0899e0c4474939861469ac43339f128344/skills/clean-code/SKILL.md)。
+- [/clean-code](./skills/clean-code/SKILL.md) —— 基于《代码整洁之道》原则整理代码。该 skill 当前以本仓库内的本地文档为准，完全来源于 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills/blob/main/skills/clean-code/SKILL.md)。
 
 ### 常用，个人偏好
 - [/to-issues](./skills/to-issues/SKILL.md) —— 将任务计划、规范或 PRD 分解为可独立获取的 GitHub 问题，适用于做轻量任务管理。该 skill 完全来源于 [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md)
