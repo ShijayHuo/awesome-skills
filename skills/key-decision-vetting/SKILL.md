@@ -1,6 +1,6 @@
 ---
 name: key-decision-vetting
-description: Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.
+description: Focused grilling session that pressure-tests the highest-impact design decisions against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline. Use when the user wants a finite review of key decisions rather than an exhaustive interrogation of every branch.
 metadata:
   short-description: Finite review of key design decisions
 ---
@@ -20,6 +20,10 @@ If you have asked 30 questions in this session, stop and ask whether I want to c
 </what-to-do>
 
 <supporting-info>
+
+## Positioning
+
+Prefer this skill over [../grill-with-docs/SKILL.md](../grill-with-docs/SKILL.md) when the user needs a bounded, high-signal review of the most consequential decisions instead of a full traversal of every branch in the design tree.
 
 ## Domain awareness
 
