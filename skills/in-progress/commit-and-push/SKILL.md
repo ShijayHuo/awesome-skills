@@ -9,7 +9,7 @@ Commit and publish the intended local changes without sweeping in unrelated work
 
 ## Scope
 
-This skill covers branch creation, staging, commit, push, and optional pull request creation. If no issue or docs exist, do not block the publish flow.
+This skill covers branch creation, staging, commit, push, and pull request creation. It defaults to remote publication.
 
 ## Context To Gather
 
@@ -48,16 +48,15 @@ Before committing, gather delivery context in this order:
 6. Write the commit message using the format below.
 7. If an issue or docs/specs were found, mention them in the commit body only after verifying that the references are relevant and safe to include.
 8. Respect the user's requested publication scope.
-   - If the user asked only for a local commit, stop after the commit.
-   - Push only when the user explicitly asked to push, publish, ship, or otherwise create/update a remote branch.
-   - Create a PR only when the user explicitly asked for one, asked to publish/ship, or confirmed that opening a PR is desired.
+   - If the user explicitly asked only for a local commit, stop after the commit.
+   - Otherwise push the branch and create the PR.
 9. If a push is required:
    - Prefer `git push -u origin HEAD` or `git push -u origin $(git branch --show-current)` when the branch has no upstream yet.
    - Otherwise use a normal `git push` on the tracked remote.
    - Before pushing, inspect the staged names and diff for accidental secrets. If the repo has an existing secret scan command or hook, run it. Otherwise do a manual check and stop on suspicion.
 10. If a PR is required:
    - If this path depends on `gh`, check `gh auth status` before the first `gh` command. If unauthenticated, ask the user to run `gh auth login` and retry this step.
-   - Prefer `gh pr view` to detect an existing PR before creating a new one.
+   - If a PR already exists for the branch, reuse it.
    - Prefer a draft PR by default unless the user explicitly asks for a ready-for-review PR.
    - Infer the base branch from the repository default branch unless the user specifies another target.
    - Prefer `gh pr create` / `gh pr view` for PR discovery and creation.
