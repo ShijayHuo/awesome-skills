@@ -1,11 +1,11 @@
 ---
 name: code-implement
-description: Implement code changes through a direct-by-default workflow with explicit Planning, Implementation, Refactor, and Done stages.  Use when adding a feature, modifying working code, refactoring implementation logic, or carrying a plan into code.
+description: Implement code changes through a direct-by-default workflow with explicit Planning, Implementation, Refactor, and Done stages. Use when adding a feature, modifying working code, refactoring implementation logic, or carrying a plan into code.
 ---
 
 # Code Implement
 
-Default to this skill for implementation work. When the Planning stage marks part of the work as test-first, run the red-green-refactor sub-loop inline (see [tdd.md](tdd.md)).
+Default to this skill for implementation work. Plan first, but only stop for explicit user approval when the public interface is unclear, risk is high, or there are meaningful trade-offs. When the Planning stage marks part of the work as test-first, run the red-green-refactor sub-loop inline (see [tdd.md](tdd.md)).
 
 ## Positioning
 
@@ -28,14 +28,14 @@ Default to this skill for implementation work. When the Planning stage marks par
 - Use `try/catch` only to recover, translate an external failure, or add necessary context.
 - Do not add compatibility branches, legacy adapters, or fallback values unless the current task explicitly requires supporting more than one live behavior or data shape.
 
-Boundary checklist — guards go here:
+Boundary checklist - guards go here:
 
 - ✅ **External input boundaries**: user input, API request bodies, external service responses
 - ✅ **Persistence boundaries**: database reads/writes, file I/O
 - ✅ **Cross-process boundaries**: network calls, message queues
 - ✅ **Concurrency boundaries**: data shared across threads
 
-Not boundaries — do not re-validate here:
+Not boundaries - do not re-validate here:
 
 - ❌ Internal function parameters on trusted internal call chains
 - ❌ Domain entities constructed only internally
@@ -81,10 +81,10 @@ Frontend / backend strategy:
 
 - **Backend** (data persistence, business rules, external I/O, auth, cross-process communication): test-first for complex business logic and branching behavior.
 - **Frontend** (UI rendering, interaction, local state): skip tests by default.
-- **Frontend complex-logic exception**: form validation rules, state machines, reusable pure-function utilities → test even though they live on the frontend.
-- **Shared utility functions**: pure string/formatting helpers → skip; helpers that encode business rules or decisions → test.
+- **Frontend complex-logic exception**: form validation rules, state machines, reusable pure-function utilities -> test even though they live on the frontend.
+- **Shared utility functions**: pure string/formatting helpers -> skip; helpers that encode business rules or decisions -> test.
 
-Decision rule: **"Is this code making a decision? Would a wrong decision cause real loss?"** Yes → test. No → skip. Frontend/backend is just a fast approximation of this judgment.
+Decision rule: **"Is this code making a decision? Would a wrong decision cause real loss?"** Yes -> test. No -> skip. Frontend/backend is just a fast approximation of this judgment.
 
 Lean on tests when one or more of these are true:
 
@@ -110,22 +110,22 @@ Do not:
 
 ### 1. Planning
 
-When exploring the codebase, read the project's `CONTEXT.md` (domain glossary) and relevant ADRs so that names and interface vocabulary align with the project's language.
+When exploring the codebase, read the project's `CONTEXT.md` (domain glossary) and relevant ADRs if they exist so that names and interface vocabulary align with the project's language.
 
 Before writing any code:
 
-- [ ] Read `CONTEXT.md` (domain terms) and relevant ADRs; align naming with the project's language
+- [ ] If `CONTEXT.md` or ADRs exist, read the relevant ones and align naming with the project's language
 - [ ] Identify code type: frontend / backend / boundary code
-- [ ] Confirm interface changes needed (with user)
+- [ ] Decide whether interface changes are already clear or need user confirmation
 - [ ] Decide which parts need test-first, which may get post-hoc tests, which get no tests
 - [ ] List implementation steps (not test steps)
-- [ ] Get user approval on the plan
+- [ ] If the public interface is unclear, risk is high, or trade-offs are meaningful, get user approval on the plan
 
-Ask: "What should the public interface look like? Which parts carry real decisions and need tests?"
+When needed, ask: "What should the public interface look like? Which parts carry real decisions and need tests?"
 
 ### 2. Direct Implementation
 
-Implement incrementally — one behavior or one part at a time, not the whole feature at once.
+Implement incrementally - one behavior or one part at a time, not the whole feature at once.
 
 - [ ] Start from the nearest existing abstraction; do not build a new one first
 - [ ] Implement in the most direct, honest way
@@ -139,15 +139,15 @@ If Planning marked part of the work as test-first, run that part through the red
 
 After behavior is implemented, look for refactor candidates. Detailed rules in [refactoring.md](refactoring.md).
 
-- [ ] If tests exist → run them after each refactor step
-- [ ] If no tests → manually verify key behavior is unchanged after each step
+- [ ] If tests exist -> run them after each refactor step
+- [ ] If no tests -> manually verify key behavior is unchanged after each step
 - [ ] Refactor only code directly touched by the current change
 - [ ] Extract duplication, deepen modules, keep abstractions justified by this change
 - [ ] Never add new features while refactoring
 
 ### 4. Done Criteria
 
-- [ ] Domain terms and ADRs respected; naming matches project language
+- [ ] Domain terms and ADRs respected when present; naming matches project language
 - [ ] The chosen path is the lightest one that still fits the real complexity
 - [ ] Defensive code exists at boundaries, not everywhere
 - [ ] Abstractions are justified by the current change, not imagined future reuse

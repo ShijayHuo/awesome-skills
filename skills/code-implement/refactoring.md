@@ -1,11 +1,11 @@
 # Refactoring
 
-Refactoring rules for code-implement. Covers both the test-protected case and the no-test case — code-implement does not always have tests, so the discipline adapts.
+Refactoring rules for code-implement. Covers both the test-protected case and the no-test case - code-implement does not always have tests, so the discipline adapts.
 
 ## 1. Refactoring Prerequisites
 
-- **If tests exist** → run them; they are your safety net.
-- **If no tests** → manually verify the key behavior is unchanged, and keep the refactor scope smaller than you would with tests. No safety net means smaller steps.
+- **If tests exist** -> run them; they are your safety net.
+- **If no tests** -> manually verify the key behavior is unchanged, and keep the refactor scope smaller than you would with tests. No safety net means smaller steps.
 
 ## 2. Scope Discipline
 
@@ -16,7 +16,7 @@ Refactor only code directly touched by the current change. Do not perform broad 
 - Renaming (variables, functions, types)
 - Extracting or inlining functions
 - Removing duplication that actively makes the current change harder to understand or modify
-- Deepening modules — moving complexity behind a simple interface, within the current change
+- Deepening modules - moving complexity behind a simple interface, within the current change
 
 ## 4. Forbidden Refactors
 
@@ -28,8 +28,8 @@ Refactor only code directly touched by the current change. Do not perform broad 
 ## 5. Pace
 
 - Each step small and continuous.
-- With tests → run tests after each step.
-- Without tests → manually verify after each step.
+- With tests -> run tests after each step.
+- Without tests -> manually verify after each step.
 - Stop and re-verify the moment a step feels non-trivial.
 
 ## 6. Never

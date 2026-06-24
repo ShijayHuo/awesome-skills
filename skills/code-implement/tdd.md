@@ -1,19 +1,19 @@
 # Red-Green-Refactor Sub-Loop
 
-Technical rules for the test-first sub-loop invoked from the Planning stage. This is a tool reference, not a philosophy — see Principle 5 of [SKILL.md](SKILL.md) for when to apply it.
+Technical rules for the test-first sub-loop invoked from the Planning stage. This is a tool reference, not a philosophy - see Principle 5 of [SKILL.md](SKILL.md) for when to apply it.
 
 ## Vertical Slices, Not Horizontal
 
-**DO NOT write all tests first, then all implementation.** That is "horizontal slicing" — treating RED as "write all tests" and GREEN as "write all code."
+**DO NOT write all tests first, then all implementation.** That is "horizontal slicing" - treating RED as "write all tests" and GREEN as "write all code."
 
 It produces bad tests:
 
 - Tests written in bulk test _imagined_ behavior, not _actual_ behavior
 - You end up testing the _shape_ of things (data structures, signatures) rather than user-facing behavior
-- Tests become insensitive to real changes — they pass when behavior breaks, fail when behavior is fine
+- Tests become insensitive to real changes - they pass when behavior breaks, fail when behavior is fine
 - You outrun your headlights, committing to test structure before understanding the implementation
 
-**Correct approach**: vertical slices via tracer bullets. One test → one implementation → repeat. Each test responds to what you learned from the previous cycle.
+**Correct approach**: vertical slices via tracer bullets. One test -> one implementation -> repeat. Each test responds to what you learned from the previous cycle.
 
 ```
 WRONG (horizontal):
@@ -29,7 +29,7 @@ RIGHT (vertical):
 
 ## The Loop
 
-1. **Tracer bullet** — write ONE test that confirms ONE thing about the system:
+1. **Tracer bullet** - write ONE test that confirms ONE thing about the system:
 
    ```
    RED:   Write test for first behavior -> test fails
@@ -38,7 +38,7 @@ RIGHT (vertical):
 
    This proves the path works end-to-end.
 
-2. **Incremental loop** — for each remaining behavior:
+2. **Incremental loop** - for each remaining behavior:
 
    ```
    RED:   Write next test -> fails
@@ -52,7 +52,7 @@ Rules:
 - Don't anticipate future tests
 - Keep tests focused on observable behavior
 
-3. **Refactor** — after all tests pass (see [refactoring.md](refactoring.md)).
+3. **Refactor** - after all tests pass (see [refactoring.md](refactoring.md)).
 
 **Never refactor while RED.** Get to GREEN first.
 
