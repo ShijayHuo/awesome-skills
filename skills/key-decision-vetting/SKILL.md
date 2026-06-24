@@ -23,7 +23,7 @@ If you have asked 30 questions in this session, stop and ask whether I want to c
 
 ## Positioning
 
-Prefer this skill over [../grill-with-docs/SKILL.md](../grill-with-docs/SKILL.md) when the user needs a bounded, high-signal review of the most consequential decisions instead of a full traversal of every branch in the design tree.
+Use this skill when the user needs a bounded, high-signal review of the most consequential decisions instead of a full traversal of every branch in the design tree.
 
 ## Domain awareness
 
