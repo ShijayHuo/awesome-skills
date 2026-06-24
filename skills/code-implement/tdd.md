@@ -1,6 +1,6 @@
 # Red-Green-Refactor Sub-Loop
 
-Technical rules for the test-first sub-loop invoked from the Planning stage. This is a tool reference, not a philosophy — see Principle 5 of [SKILL.md](SKILL.md) for when to apply it.
+This file is the technical expansion of the **Embedded TDD Core** (`CONTEXT.md`): the small set of test-first rules a Self-Contained Orchestrator Skill carries inline, invoked only when behavior and regression risk justify it. It is a tool reference, not a philosophy — see Principle 5 of [SKILL.md](SKILL.md) for when to apply it.
 
 ## Vertical Slices, Not Horizontal
 

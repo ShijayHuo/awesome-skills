@@ -9,12 +9,16 @@ Default to this skill for implementation work. When the Planning stage marks par
 
 ## Positioning
 
+`code-implement` is a **Self-Contained Orchestrator Skill** (see `CONTEXT.md`): it does not hand off to `/tdd` or `/clean-code` at runtime. Instead it inlines the minimal sub-loop rules — the **Embedded TDD Core** and **Embedded Clean Code Core** — and decides internally which branch to take.
+
 - Prefer this skill when the task is to make code changes.
 - If the code is broken or the task is to investigate a defect, prefer `/diagnose`.
 
 ## Philosophy
 
 ### Principle 1: Direct, Honest Implementation
+
+This principle follows the **Implementation-First Priority** order from `CONTEXT.md`: shortest working implementation → reject speculative defensive code → apply the **Embedded Clean Code Core** → apply the **Embedded TDD Core** only when behavior and risk justify tests.
 
 1. Implement the change in the most direct honest way.
 2. Reject speculative defensive code and compatibility paths.
@@ -74,6 +78,8 @@ Do not:
 - treat every helper as needing its own test
 
 ### Principle 5: Proportionate Testing, No Ceremony
+
+This is the **Complexity Escalation Rule** from `CONTEXT.md` applied to testing: stay on direct implementation by default, and escalate to the test-first sub-loop only when an explicit signal is hit.
 
 **Default**: implement directly, do not write tests by default. Test-first is an opt-in applied only where it earns its place.
 

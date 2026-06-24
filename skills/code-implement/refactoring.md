@@ -1,6 +1,6 @@
 # Refactoring
 
-Refactoring rules for code-implement. Covers both the test-protected case and the no-test case — code-implement does not always have tests, so the discipline adapts.
+Refactoring rules for code-implement, exercising the **Embedded Clean Code Core** (`CONTEXT.md`): the small set of readability and restraint rules kept inline in a Self-Contained Orchestrator Skill. Covers both the test-protected case and the no-test case — code-implement does not always have tests, so the discipline adapts.
 
 ## 1. Refactoring Prerequisites
 
