@@ -38,13 +38,10 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 ```
 ## skills 列表
 ### 必备
-- [/key-decision-vetting](./skills/key-decision-vetting/SKILL.md) —— 一个有限且高信号的设计决策审查，聚焦最关键的分支与分歧，统一领域术语，并将结果同步到 CONTEXT.md 和架构决策记录（ADRs）。这个 skill 基于 `/grill-with-docs` 改造，适合做收敛式决策评审。
-- [/grill-with-docs](./skills/grill-with-docs/SKILL.md) —— 一个更重、更全量的逐分支设计拷打流程，用来对齐需求、拆解功能、统一领域术语和概念，并最终同步到 CONTEXT.md 和架构决策记录（ADRs）。如果你只需要有限轮次、聚焦关键决策的评审，更推荐使用 [/key-decision-vetting](./skills/key-decision-vetting/SKILL.md)。该 skill 完全来源于 [Mattpocock: Grill with doc](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md)。
-- [/tdd](./skills/tdd/SKILL.md) —— 测试驱动开发。该 skill 完全来源于 [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md)。
-- [/code-implement](./skills/code-implement/SKILL.md) —— 在新增功能、修改现有代码或重构实现时，结合项目的 CONTEXT.md 和相关 ADRs 评估复杂度与风险，并选择合适的改动方案。该 skill 当前以本仓库内的本地文档为准。
+- [/key-decision-vetting](./skills/key-decision-vetting/SKILL.md) —— 一个有限且高信号的设计决策审查，聚焦最关键的分支与分歧，统一领域术语，并将结果同步到 CONTEXT.md 和架构决策记录（ADRs）。该 skill 基于 [Mattpocock: Grill with doc](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) 优化。
+- [/code-implement](./skills/code-implement/SKILL.md) —— 在新增功能、修改现有代码或重构实现时，结合项目的 CONTEXT.md 和相关 ADRs 评估复杂度与风险，并选择合适的改动方案。该 skill 当前以本仓库内的本地文档为准，并参考了 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills/blob/main/skills/clean-code/SKILL.md) 和 [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md)。
 - [/review](./skills/review/SKILL.md) —— 代码审查，验证实现是否与功能对齐、代码是否符合规范，如命名、架构分层、组件规范等等。该 skill 完全来源于 [Mattpocock: Review](https://github.com/mattpocock/skills/blob/main/skills/in-progress/review/SKILL.md)
 - [/diagnose](./skills/diagnose/SKILL.md) —— 修复漏洞，适用于提出“诊断此问题”/“调试此问题”、报告缺陷、指出某些功能出现故障/抛出异常/失败，或描述性能退化的情况。该 skill 完全来源于 [Mattpocock: diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md)。
-- [/clean-code](./skills/clean-code/SKILL.md) —— 基于《代码整洁之道》原则整理代码。该 skill 当前以本仓库内的本地文档为准，完全来源于 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills/blob/main/skills/clean-code/SKILL.md)。
 
 ### 常用，个人偏好
 - [/to-issues](./skills/to-issues/SKILL.md) —— 将任务计划、规范或 PRD 分解为可独立获取的 GitHub 问题，适用于做轻量任务管理。该 skill 完全来源于 [Mattpocock: To issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md)
