@@ -1,6 +1,6 @@
 ---
 name: handover
-description: Prepare a handover document for the next session or agent. Use when the context window is getting full, another agent should continue the work, or a converged discussion needs an implementation-ready handoff into coding.
+description: Prepare a handover document for the next session or agent. Use when another agent should continue the work, when the user wants to preserve the current state, or when a converged discussion needs an implementation-ready handoff into coding.
 ---
 
 # Handover
