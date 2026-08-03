@@ -40,7 +40,7 @@ npx skills add ShijayHuo/awesome-skills --skill <skill-name> -a codex -g
 ### 必备
 - [/key-decision-vetting](./skills/key-decision-vetting/SKILL.md) —— 一个有限且高信号的设计决策审查，聚焦最关键的分支与分歧，统一领域术语，并将结果同步到 CONTEXT.md 和架构决策记录（ADRs）。该 skill 基于 [Mattpocock: Grill with doc](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) 优化。
 - [/code-implement](./skills/code-implement/SKILL.md) —— 在新增功能、修改现有代码或重构实现时，结合项目的 CONTEXT.md 和相关 ADRs 评估复杂度与风险，并选择合适的改动方案。该 skill 当前以本仓库内的本地文档为准，并参考了 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills/blob/main/skills/clean-code/SKILL.md) 和 [Mattpocock: TDD](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md)。
-- [/review](./skills/review/SKILL.md) —— 代码审查，验证实现是否与功能对齐、代码是否符合规范，如命名、架构分层、组件规范等等。该 skill 完全来源于 [Mattpocock: Review](https://github.com/mattpocock/skills/blob/main/skills/in-progress/review/SKILL.md)
+- [/code-review](./skills/code-review/SKILL.md) —— 代码审查，验证实现是否与功能对齐、代码是否符合规范，如命名、架构分层、组件规范等等。该 skill 完全来源于 [Mattpocock: Code Review](https://github.com/mattpocock/skills/blob/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/engineering/code-review/SKILL.md)
 - [/diagnose](./skills/diagnose/SKILL.md) —— 修复漏洞，适用于提出“诊断此问题”/“调试此问题”、报告缺陷、指出某些功能出现故障/抛出异常/失败，或描述性能退化的情况。该 skill 完全来源于 [Mattpocock: diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md)。
 
 ### 常用，个人偏好
