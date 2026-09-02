@@ -57,7 +57,7 @@ Before committing, gather delivery context in this order:
 10. If a PR is required:
    - If this path depends on `gh`, check `gh auth status` before the first `gh` command. If unauthenticated, ask the user to run `gh auth login` and retry this step.
    - If a PR already exists for the branch, reuse it.
-   - Prefer a draft PR by default unless the user explicitly asks for a ready-for-review PR.
+   - Create an open, ready-for-review PR by default. Only create a draft PR when the user explicitly asks for one.
    - Infer the base branch from the repository default branch unless the user specifies another target.
    - Prefer `gh pr create` / `gh pr view` for PR discovery and creation.
 11. Report back branch name, commit hash, validation, publication actions taken, and any linked issue/docs used.
